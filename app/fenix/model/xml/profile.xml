@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="profile" title="Perfil" schema="fenix">
+  <field name="name" title="Nome" type="text" size="255" required="1" searchable="1" form="e" grid="v"/>
+</section>

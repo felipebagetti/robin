@@ -1,0 +1,36 @@
+
+/* Ajuste para modificar a margem padrão do container do bootstrap */
+
+.login-form {
+    border: 1px solid #888;
+    background-color: #fff;
+    padding: 10px;
+}
+
+fieldset legend {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+fieldset .button-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn {
+    margin: 10px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+.container {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+input {
+    width: 200px;
+}

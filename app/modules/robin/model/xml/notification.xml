@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="notification" title="Notificação" schema="robin">
+  <field name="sent_time" title="Hora de envio" type="datetime" form="e" grid="v"/>
+  <field name="sender" title="Remetente" field="name" type="fk" table="user" key="id" required="1" form="e" grid="v"/>
+  <field name="receiver" title="Destinatário" field="name" type="fk" table="user" key="id" required="1" form="e" grid="v"/>
+  <field name="status" title="Status" type="select" data="Não lida:1,Lida:2" default="1" form="e" grid="v"/>
+  <field name="body" title="Corpo da Mensagem" type="bigtext" form="e" grid="n" searchable="1"/>
+</section>

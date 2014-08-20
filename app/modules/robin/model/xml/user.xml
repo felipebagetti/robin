@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="user" title="Usuários" schema="robin">
+  <field name="creation_date" title="Data criação" type="date" default="NOW()" required="1" form="n" grid="n"/>
+  <field name="login" title="Login" type="text" size="255" required="1" form="v" grid="n" searchable="1"/>
+  <field name="email" title="E-mail" type="text" size="255" required="1" form="v" grid="n"/>
+  <field name="name" title="Nome" type="text" size="255" required="1" form="e" grid="v" searchable="1"/>
+  <field name="picture" title="Foto" type="image" form="e" grid="v"/>
+  <field name="password" title="Senha" type="password" form="e" grid="n"/>
+  <field name="bio" title="Descrição" type="text" size="255" width="15em" form="e" grid="n"/>
+  <field name="location" title="Localização" type="text" size="255" width="15em" form="e" grid="v"/>
+  <field name="phone_number" title="Telefone" type="telephone" width="10em" row="22" form="e" grid="n"/>
+  <field name="website" title="Site" type="text" size="255" width="15em" form="e" grid="n"/>
+  <field name="facebook" title="Facebook" type="text" size="255" width="15em" form="e" grid="n"/>
+  <field name="twitter" title="Twitter" type="text" size="255" width="15em" form="e" grid="n"/>
+  <field name="token" title="token" type="text" size="255" form="n" grid="n"/>
+  <field name="email_validated" title="Email Validated" type="datetime" form="n" grid="n"/>
+  <section name="contact" title="Contatos">
+    <field name="email" title="E-mail" type="text" size="255" form="e" grid="v"/>
+    <field name="phone_number" title="Telefone" type="telephone" width="10em" row="22" form="e" grid="v"/>
+  </section>
+</section>

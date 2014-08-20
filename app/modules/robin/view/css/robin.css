@@ -1,0 +1,652 @@
+
+.alert {
+    font-weight: normal;
+}
+
+/*Estilo para o repositorio do botão do calendario*/
+.input-group-addon-calendar {
+	padding: 3px 8px;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: center;
+	background-color: #eeeeee;
+	border: 1px solid #cccccc;
+	border-radius: 2px;
+	white-space: nowrap;
+	vertical-align: middle;
+	border-top-color: rgb(204, 204, 204);
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-right-color: rgb(204, 204, 204);
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-color: rgb(204, 204, 204);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+/* Define a cor do background quando o textarea estiver desabilitado */
+textarea[readonly], textarea:focus[readonly]{
+	background-color: #f4f4f4;
+}
+
+input[readonly]{
+	color: #000;
+}
+
+.input-group {
+position: relative;
+display: inline;
+border-collapse: separate;
+}
+
+.input-group-calendar {
+	position: relative;
+	display: inline-block;
+	border-collapse: separate;
+}
+
+.input-group-sm>.form-control,.input-group-sm>.input-group-addon,.input-group-sm>.input-group-btn>.btn
+	{
+	height: 25px;
+	padding: 2px 10px;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.input-group-addon{
+	display: inline-table;
+}
+
+.input-group-btn,.input-group .form-control {
+	display: inline-grid;
+}
+
+.parsley-error-list {
+    display: none;
+}
+
+/** Altura do input search */
+.form-control {
+	height: 38px;
+}
+
+.nav-search .nav-search-icon {
+	color: #6fb3e0 !important;
+	font-size: 14px !important;
+	line-height: 28px !important;
+}
+
+/**Define alinhamento da barra search com Grid principal.*/
+.navbar-form{
+	padding: 0px 0px;
+}
+
+.nav-search .nav-search-input {
+	border: 1px solid #6fb3e0;
+	width: 152px;
+	height: 28px !important;
+	border-radius: 4px !important;
+	font-size: 13px;
+	color: #666666 !important;
+	z-index: 11;
+	-webkit-transition: width ease .15s;
+	transition: width ease .15s;
+	padding: 0px 22px;
+}
+
+.table .left {
+    text-align: left;
+}
+
+.table .center {
+    text-align: center;
+}
+
+.table .right {
+    text-align: right;
+}
+
+/** Define espaçamento para início do conteúdo da busca no input do search*/
+
+.input-icon-search > [type="text"]{
+	padding: 5px 36px;
+}
+
+/** Define alinhamento entre os botoes e a barra do search, também com alinhamento lateral */
+
+.pagination {
+	margin: -1px 1px !important;
+	margin-top: 2px !important;
+}
+
+.col-xs-12>div[id="buttons-page"] {
+	margin: -4px -5px !important;
+}
+ 
+.col-xs-12 > div[id="pagination"] > div[class="pull-left"] > span
+{
+	margin-top: 0px !important;
+	margin: 8px 0px !important;
+}
+
+#filter-bar{
+    margin-bottom: 1px;
+}
+
+/** Para Mozilla **/
+/** Redefinição do estilo para o alinhamento dos botoes e a barra do search quando for Mozilla*/
+@-moz-document url-prefix() {
+	
+	#buttons-page{
+		margin: 0px -5px 4px -5px!important;
+	}
+	
+	#pagination{
+		margin-top: -8px;		
+	}
+
+	#filter-bar{
+	   margin: 1px -2px !important;
+	}
+}
+/** Para Opera **/
+/** Redefinição do tamanho da fonte dos valores númerico no dashboard quando for Opera*/
+body:-o-prefocus,.infobox>.stat {
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	top: 11px;
+	text-shadow: none;
+	color: #ABBAC3;
+	font-size: 13px;
+	font-weight: bold;
+	padding-right: 18px;
+	padding-top: 3px;
+}
+
+body:-o-prefocus, html {
+  font-family: arial !important;
+}
+
+/** Para IE8+ **/
+@media screen\0{
+	/* Redefinindo largura dos inputs para telefone e celular */
+	.col-xs-12[id="element-container"] > form > table[id="principal"] > tbody > tr > td > input[id="telefone"],[id="celular"]{
+       width: 9.3em !important;
+    }
+	/* Inserido para que último dígito aparece no input com conteúdo númerico alinhado à direita*/
+	input[type="text"]{
+		padding-right: 1px;
+	}
+}
+
+/** Definições para o icone do search*/
+.input-icon-search>[class*="icon-"] {
+	padding: 5px 0px;
+	z-index: 1;
+	position: absolute;
+	top: 0px;
+	bottom: 1px;
+	left: 12px;
+	line-height: 28px;
+	display: inline-block;
+	/*color: #F3EEEE*/;
+	color: #478fca;
+	font-size: 16px;
+}
+
+span.input-icon-search {
+	display: block;
+}
+
+.input-icon-search>input:focus+[class*="icon-"] {
+	color: #478fca;
+}
+
+.btn>[class*="icon-"] {
+	display: inline;
+	margin-right: 2px;
+}
+
+/* Redefinição do layer de aviso de carregamento */
+.label-info,.badge-info {
+	background-color: rgb(66, 139, 202) !important;
+}
+
+.checkbox, .lbl {
+    cursor: pointer;
+}
+
+/** Tooltip help */
+
+.help-button {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	line-height: 16px;
+	text-align: center;
+	padding: 0;
+	background-color: #65bcda;
+	color: #FFF;
+	font-size: 12px;
+	font-weight: bold;
+	cursor: default;
+	margin-left: 4px;
+	border-radius: 17%;
+	border-color: #FFF;
+	border: 0px solid #FFF;
+	-webkit-box-shadow: 0 0px 0 0px rgba(0, 0, 0, 0);
+	box-shadow: 0 0px 0 0px rgba(0, 0, 0, 0);
+}
+
+.help-button:hover {
+  background-color: #65bcda;
+  text-shadow: none;
+}
+
+form input {
+  box-shadow: inset 0 1px 1px #ECECEC !important;
+  border-radius: 2px !important;
+  font-size: 13px !important;
+}
+
+form input:focus {
+  box-shadow: inset 0 0px 1px #F59942 !important;
+}
+
+/** Redifinição do tamanho do glyphicon dos botões */
+
+.glyphicon{
+	font-size: 110%; /*permite que seja sempre um pouco maior que a fonte do sistema*/
+}
+
+/* Redefinção do tamanho padrão dos botões da grid */
+table td .btn i {
+    font-size: 16px;
+}
+
+.page-header {
+  margin: 0 0 4px;
+  border-bottom: 1px dotted #e2e2e2;
+  padding: 7px 0 7px 0;
+}
+
+/* Redefinição das fontes padrões */
+.glyphicon {
+	position: relative;
+	top: 0px;
+	display: inline-block;
+	font-family: 'FontAwesome';
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.glyphicon-calendar:before {
+	content: "\f073";
+}
+
+.glyphicon-time:before {
+	content: "\f017";
+}
+
+.glyphicon-search:before {
+	content: "\f002";
+}
+
+#placeholderCobrancas, #placeholderFaturamento {
+	width: 90%;
+	height: 280px;
+	position: inherit;
+	margin: 60px 4%;
+}
+
+.legend table,.legend>div {
+	height: 8px !important;
+	opacity: 1 !important;
+	top: -9%;
+}
+
+.legend table {
+	padding: 5px;
+}
+
+/* Formata o gráfico (pie) para que seja circular*/
+#piechart-placeholder canvas{
+	width: 90% !important;
+	top: 6px !important;
+	height: 156px !important;
+}
+
+#flot-tooltip {
+	font-size: 12px;
+	font-family: Verdana, Arial, sans-serif;
+	position: absolute;
+	display: none;
+	border: 2px solid;
+	padding: 2px;
+	background-color: #FFF;
+	opacity: 0.8;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/* Define tamanho do icone/fonte dos titulos dos alertas */
+.modal-title [class*="icon-"] {
+	font-size: 28px;
+	color: #2A85C7;
+	padding-right: 5px;
+}
+
+.modal-header, .modal-footer{
+	border-radius: 4px;
+}
+
+.modal-title {
+	margin: 10px;
+	line-height: 1.428571;
+}
+
+.modal-header {
+	background-color: #eff3f8;
+}
+
+/* Define posicionamento do botão X no modal */
+.modal-header .close {
+	margin-top: 10px;
+	margin-right: 0px;
+}
+
+[class*=" icon-"], [class^="icon-"] {
+    margin-top: -3px;
+}
+
+form .input-icon.input-icon-right > [class*="icon-"] {
+    left: auto;
+    right: 10px;
+    top: 8px;
+}
+
+form .input-icon.input-icon-right > [class*="icon-lock"] {
+    left: auto;
+    right: 11px;
+    top: 8px;
+}
+
+/* Redefine estilo do menu para quando estiver minimizado */
+.sidebar.fixed,.sidebar.sidebar-fixed {
+	position: fixed;
+	z-index: 1029;
+	top: 45px;
+	left: 0;
+	/*width: 204px;*/
+	height: 95%;
+	overflow-y: auto;
+}
+
+.menu-min.sidebar {
+overflow: inherit;
+}
+
+div.navbar-container{   
+	display:inline;
+}
+
+/* Redefinirá navbar e menu quando a resolução for até 479px */
+@media (max-width: 479px){
+	body.navbar-fixed {
+		padding-top: 47px;
+	}
+	div.navbar-container {
+		display: inline;
+	}
+	.sidebar.fixed,.sidebar.sidebar-fixed {
+		position: fixed;
+		z-index: 1029;
+		left: 0;
+		/*width: 204px;*/
+		height: 80%;
+		overflow-y: auto;
+	}
+	.ace-nav {
+		display: block;
+		float: none !important;
+		text-align: center;
+		background-color: #404040;
+		border: 1px solid #438eb9;
+		border-width: 1px 0;
+		letter-spacing: -3px;
+	}
+}
+.navbar .navbar-header.pull-right {
+	display: block;
+	float: right !important;
+}
+.navbar .navbar-header.pull-left {
+	display: inline;
+	float: left !important;
+}
+
+/* Grid Dados da Empresa*/
+form.tab-content>.active{
+	display: inline-table !important;
+}
+
+/* Grid Perguntas Frequentes */
+div.tab-content > .active > {
+	display: block !important;
+}
+
+.label-close {
+    padding-left: 5px;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+
+.label-close:hover {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.popover .btn {
+    margin-top: 5px;
+}
+
+.stat {
+  text-shadow: none;
+  color: #ABBAC3;
+  font-size: 13px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.stat:before {
+  content: "";
+  background-color: #ABBAC3
+}
+.stat:after {
+  content: "";
+  border: 12px solid transparent;
+  border-width: 8px 7px;
+  border-bottom-color: #ABBAC3;
+}
+.stat.stat-up {
+  color: #77C646;
+}
+.stat.stat-up:before {
+  background-color: #77C646;
+}
+.stat.stat-up:after {
+  position: relative;
+  top: -12px;
+  left: 5px;
+  border-bottom-color: #77C646;
+}
+.stat.stat-down {
+  color: #E4564F;
+  
+}
+.stat.stat-down:before {
+  background-color: #E4564F;
+}
+.stat.stat-down:after {
+  position: relative;
+  top: 12px;
+  left: 5px;
+  border-top-color: #E4564F;
+  border-bottom-color: transparent;
+}
+
+@media (max-width: 1050px) {
+    .infobox > .stat.stat-important {
+        right: -10px;
+    }
+    .infobox > .stat.stat-important:after {
+        display: none !important;
+    }
+    .infobox > .stat.stat-success {
+        right: -10px;
+    }
+    .infobox > .stat.stat-success:after {
+        display: none !important;
+    }    
+}
+
+/* Modo de Impressão */
+
+.print-only {
+    display: none;
+}
+
+@media print {
+    
+    .print-only {
+        display: inherit;
+    }
+    
+    .navbar, #sidebar, .breadcrumbs, .select2-arrow, .tooltip, .btn {
+        display: none !important;
+    }
+    
+    body.breadcrumbs-fixed {
+        padding: 0px;
+        padding-top: 0px;
+    }
+    
+    .main-content {
+        margin-left: 0px;
+    }
+    
+    .select2-choice {
+        background: none !important;   
+    }
+    .select2-chosen {
+        font-weight: bold !important;   
+    }
+    .select2-choice {
+        border: none !important;
+    }
+    
+}
+
+/** Estilo para o box/mask do dashboard quando não houver registros*/
+.box-disabled-container {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	width: 60%;
+	background-color: white;
+	-webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #9ca5ac;
+	z-index: 1000;
+	padding: 20px;
+}
+
+.box-disabled-container h5 {
+    color: #2687e9;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.box-disabled-container .box-disabled-button {
+	text-align: center;
+	padding-top: 15px;
+}
+
+/** Novo estilo para botões brancos*/
+
+.btn-sm.btn-white-esp {
+	border-width: 1px;
+	font-size: 13px;
+	padding: 7px 9px;
+	line-height: 1.39;
+}
+
+.btn.btn-white-esp{
+	color: #444 !important;
+}
+.btn-white-esp,
+.btn-white-esp:focus {
+  background-color: #FFF !important;
+  border-color: #D6D1D1;
+  text-shadow: none !important;
+}
+.btn-white-esp:hover,
+.open .btn-white-esp.dropdown-toggle {
+  background-color: #FAFAFA !important;
+  border-color: #BBB5B5;
+}
+.btn-white-esp.no-border:hover {
+  border-color: #C0BFBF;
+}
+.btn-white-esp.no-hover:hover {
+  background-color: #fff !important;
+}
+.btn-white-esp.active {
+  background-color: #C0BFBF !important;
+  border-color: #BBB5B5;
+}
+.btn-white-esp.no-border.active {
+  background-color: #fff !important;
+  border-color: #fff;
+}
+.btn-white-esp.disabled,
+.btn-white-esp[disabled],
+fieldset[disabled] .btn-white-esp,
+.btn-white-esp.disabled:hover,
+.btn-white-esp[disabled]:hover,
+fieldset[disabled] .btn-white-esp:hover,
+.btn-white-esp.disabled:focus,
+.btn-white-esp[disabled]:focus,
+fieldset[disabled] .btn-white-esp:focus,
+.btn-white-esp.disabled:active,
+.btn-white-esp[disabled]:active,
+fieldset[disabled] .btn-white-esp:active,
+.btn-white-esp.disabled.active,
+.btn-white-esp[disabled].active,
+fieldset[disabled] .btn-white-esp.active {
+  background-color: #fff !important;
+  border-color: #fff;
+}
+
+/** Posicionamento do botão para imprimir relatórios*/
+
+#buttons-page > span.btn[data-original-title*="Imprimir Relatório"]  {
+	
+	margin-top: 6px; !important
+}
+

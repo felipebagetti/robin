@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="model" title="Modelo" schema="fenix">
+  <field name="name" title="Name" type="text" size="50" form="e" grid="v"/>
+  <field name="schema" title="Schema" type="text" size="50" form="e" grid="v"/>
+  <field name="xml" title="XML" type="bigtext" form="e" grid="v"/>
+</section>

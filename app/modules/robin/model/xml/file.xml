@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="file" title="File" schema="robin">
+  <field name="hash" title="hash" type="text" size="50" required="1" searchable="1" form="e" grid="v"/>
+  <field name="info" title="info" type="text" size="512" required="1" searchable="1" form="e" grid="v"/>
+  <field name="oid" title="oid" type="text" size="40" required="1" form="e" grid="v"/>
+  <field name="bzip2" title="bzip2" type="option" form="e" grid="v"/>
+  <field name="size" title="size" type="int" form="e" grid="v"/>
+</section>

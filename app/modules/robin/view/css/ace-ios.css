@@ -1,0 +1,4 @@
+.nav-list > li .submenu > li.active > a > [class*="icon-"]:first-child,
+.nav-list > li .submenu > li:hover > a > [class*="icon-"]:first-child {
+  display: none;
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="friendship" title="Amigos" schema="robin">
+  <field name="user_1" title="Usuário 1" field="name" type="fk" table="user" key="id" required="1" searchable="1" form="e" grid="n"/>
+  <field name="user_2" title="Usuário 2" field="name" type="fk" table="user" key="id" required="1" searchable="1" form="e" grid="n"/>
+  <field name="status" title="Status" type="select" data="Pendente:1,Aceito:2,Negado:3,Bloqueado:4" default="1" required="1" form="e" grid="v"/>
+</section>

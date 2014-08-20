@@ -1,0 +1,38 @@
+{
+  "general": {
+      "defaultModule":"sgp",
+      "defaultAction": "sgp/solicitacao/",
+      "modelTable":"fenix.model",
+      "dev":true
+  },
+  "database": {
+      "dbtype":"PDO_PGSQL",
+      "host":"localhost",
+      "username":"fenix",
+      "password":"fenix",
+      "dbname":"fenix"
+  },
+  "auth": {
+      "model":"fenix.user",
+      "tfa":"true",
+      "column_user":"login",
+      "column_profile":"id_profile",
+      "column_password":"password",
+      "column_tfa_secret":"tfa_secret"
+  },
+  "menu": {
+      "model":"sgp.menu"
+  },
+  "profile": {
+      "model":"sgp.perfil",
+      "section_permissions":"permissoes"
+  },
+  "file": {
+      "model":"fenix.file",
+      "column_hash":"hash",
+      "column_info":"info",
+      "column_oid":"oid",
+      "column_bzip2":"bzip2",
+      "column_size":"size"
+  }
+}

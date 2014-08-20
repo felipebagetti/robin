@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="user" title="Usuário" schema="fenix">
+  <field name="name" title="Nome" type="text" size="255" required="1" searchable="1" form="e" grid="v"/>
+  <field name="login" title="Login" type="text" size="255" required="1" searchable="1" form="e" grid="v"/>
+  <field name="password" title="Senha" type="password" form="e" grid="v"/>
+  <field name="email" title="E-mail" type="text" size="255" form="e" grid="v"/>
+</section>

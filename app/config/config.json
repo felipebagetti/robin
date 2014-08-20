@@ -1,0 +1,19 @@
+{
+  "general": {
+      "defaultModule":"robin",
+      "defaultAction": "goal/calendar",
+      "modelTable":"robin.model",
+      "https":false
+  },
+  "database": {
+      "dbtype":"PDO_SQLITE",
+      "dbname":"app/modules/robin/database/robin.db"
+  },
+  
+  "auth": {
+      "model":"user"
+  },
+  "file": {
+      "model":"file"
+  }
+}

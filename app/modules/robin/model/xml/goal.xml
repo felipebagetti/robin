@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="goal" title="Metas" schema="robin">
+  <field name="datetime" title="Data/Hora criação" type="datetime" default="NOW()" required="1" form="n" grid="n"/>
+  <field name="due_datetime" title="Prazo" type="datetime" form="e" grid="v"/>
+  <field name="name" title="Título" type="text" size="255" required="1" form="e" grid="v" searchable="1"/>
+  <field name="description" title="Descrição" type="text" size="255" form="e" grid="n" searchable="1"/>
+  <field name="place" title="Local" type="text" size="255" form="e" grid="n" searchable="1"/>
+  <field name="goal" title="Meta Superior" field="name" type="fk" table="goal" key="id" form="e" grid="v"/>
+  <field name="priority" title="Prioridade" type="select" data="Baixa:1,Normal:2,Alta:3,Urgente:4" default="2" required="1" form="e" grid="v" searchable="1"/>
+  <field name="status" title="Status" type="select" data="Pendente:1,Concluída:2,Cancelada:3" default="1" required="1" form="e" grid="v"/>
+  <section name="comments" title="Comentários">
+    <field name="datetime" title="Data e Hora" type="datetime" default="NOW()" required="1" form="n" grid="v"/>
+    <field name="user" title="Usuário" field="name" type="fk" table="user" key="id" default="USER" required="1" form="n" grid="v"/>
+    <field name="comment" title="Comentário" type="bigtext" required="1" width="30em" form="e" grid="v"/>
+  </section>
+  <section name="user" title="Usuários">
+    <field name="user" title="Usuário" field="name" type="fk" table="user" key="id" required="1" form="e" grid="v"/>
+    <field name="profile" title="Perfil" type="select" data="Administrador:1,Colaborador:2" required="1" form="e" grid="v"/>
+  </section>
+</section>

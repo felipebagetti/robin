@@ -1,0 +1,702 @@
+/* Redução do tamanho padrão da fonte do sistema para 12px */
+body {
+    font-size: 12px;
+    background-color: #A5CED6;
+    color: #000;
+}
+
+label, input, button, select, textearea {
+    font-size: 12px;    
+}
+
+a {
+  color: #777;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #555555;
+  text-decoration: underline;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  display: inline-block;
+  color: #000;
+  padding: 0px 2px 0px 6px;
+  margin-bottom: 0px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #555555;
+  vertical-align: middle;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  color: #000;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+.input-group {
+position: relative;
+display: inline;
+border-collapse: separate;
+}
+
+.input-group .form-control {
+	z-index: 0;
+	position: inherit;
+	float: left;
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.input-group-addon {
+display: inherit;
+}
+
+.form-control{
+	height: 28px;
+	
+}
+/** Define alinhamento do botão dismiss no buscador */
+[role=search] .close {
+	top : 2px;
+	position: absolute;
+}
+
+
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-addon,
+.input-group-sm > .input-group-btn > .btn {
+  height: 24px;
+  padding: 3.5px 8px; /* Alterar largura e altura do botao com icone */
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  float:none;
+}
+
+
+.input-group-calendar{
+	position: relative;
+	display:inline;
+	border-collapse: separate;
+}
+
+.radio input[type="radio"] {
+    margin-top: 2px;
+}
+
+textarea {
+  padding: 4px 2px 0px 6px;  
+}
+
+select,
+input[type="file"] {
+  height: auto;
+  line-height: inherit;
+}
+
+.input-append .add-on,
+.input-prepend .add-on {
+  height: 12px;
+}
+
+.icon-white {
+	color:white;
+}
+
+[class*=" icon-"], [class^="icon-"]{
+    margin-top: -3px;
+}
+
+.btn [class*=" icon-"], .btn [class^="icon-"] {
+    margin-top: 0px;
+}
+
+.btn {
+	padding: 3px 8px;
+}
+
+.btn-toolbar {
+	padding: 3px 8px;
+}
+
+.input-append, .input-prepend {
+    margin: 0;
+}
+
+.input-block-level {
+    min-height: 25px;   
+}
+
+/* Classes extras para definições padrão e alinhamento dentro de um jquery.grid */
+
+.filter-list {
+    padding: 3px 0px 3px 0px;
+}
+
+.filter-list .line {
+    line-height: 18px;
+}
+
+.filter-list .line .close {
+    float: none;
+    position: absolute;
+    margin-left: 6px;
+    margin-top: -4px;
+}
+
+.filter-list .line button {
+    margin-left: 3px;
+}
+
+.filter-list .line-number {
+    font-weight: bold;
+}
+
+.filter-list .line-operator {
+    color: #666;
+}
+
+.filter-container {
+    float: left;
+    margin-top: 4px;
+}
+
+.filter-container span:first {
+    margin-top: 6px;
+    text-align: left;
+}
+
+.filter-container button {
+    margin-left: 6px;
+}
+
+.filter-container .select2-container {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.pagination {
+    margin: 0px;
+}
+
+.pagination span {
+    
+}
+
+.pagination li {
+    cursor: pointer;
+}
+
+.pagination .current a {
+    font-weight: bold;
+    background-color: #C2E7ED;
+}
+
+/*ADICIONADO centered, left E right PARA O PAGINADOR Bootstrap 3*/
+.pagination-centered {
+      text-align: center;
+}
+.pagination-left {
+      text-align: left;
+}
+.pagination-right {
+      text-align: right;
+}
+
+.table {
+    font-size: 11px;
+}
+
+form .table {
+    font-size: 12px;
+}
+
+.table-hover tbody tr:hover > td,
+.table-hover tbody tr:hover > th {
+    background-color: #eee;
+}
+
+.table thead th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table td {
+    vertical-align: middle;
+    line-height: 17px;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 1px;
+}
+
+form > .table-striped tbody > tr:first-child > td {
+  border-top: none;
+}
+
+form td.separator {
+  font-weight: bold;
+  font-size: 110%;
+  background-color: #EEE !important;
+}
+
+form > .table-striped thead > tr > th {
+  border-bottom: 1px solid #dddddd;
+  background-color: #f9f9f9;
+}
+
+.updated {
+    background-color: #D5F0E9 !important;
+}
+
+.table .left {
+    text-align: left;
+}
+
+.table .center {
+    text-align: center;
+}
+
+.table .right {
+    text-align: right;
+}
+
+.label, .badge {
+    padding: 4px 14px;
+}
+
+/* Ajuste nas abas */
+
+.tab-content > .active,
+.pill-content > .active {
+  display: table;
+}
+/* Efeito hover no menu(navbar) */
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+	color: #555555;
+	text-decoration: none;
+	background-color: #e5e5e5;
+	-webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+	-moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+	box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+}
+
+/* Ajustes para o posicionamento e tamanho da barra de busca de um grid */
+
+#buttons-page {
+    text-align: right;
+}
+
+#buttons-page button {
+    margin: 3px 5px 5px 0px;
+}
+
+#grid-q {
+    padding-left: 30px; /*30px*/
+    padding-right: 10px; /*30px*/
+}
+
+[role=search] .search {
+    margin-top: -2px;
+    cursor: pointer
+}
+
+/* Ajuste para modificar a margem padrão do container do bootstrap */
+
+.container-2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #888;
+    background-color: #fff;
+    border-radius: 6px; 
+}
+
+/* Ajuste para que as abas não exibam títulos de Grid */
+
+.tab-pane h4 {
+    display: none;
+}
+
+/* Ajuste para a margem inferior da navbar */
+
+.navbar {
+    margin-bottom: 10px;
+}
+
+/* Ajuste para posicionamento do menu*/
+
+.navbar-nav > li > a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+/* Ajuste para a caixa e o botão de busca dentro de um navbar */
+.navbar-search .search-query {
+    margin-top: 4px;
+    height: 13px;
+}
+
+.navbar-search #submit {
+  top: 9px; 
+}
+
+.navbar-search .search-query {
+  padding-left: 28px;
+  padding-top: 5px;
+  width: 150px;
+}
+
+/* Ajuste para alinhamento de um ícone dentro de um dropdown */
+.dropdown [class^="icon-"], .dropdown [class*=" icon-"] {
+    margin-top: -1px;
+}
+
+/* Ajuste para alinhamento de um ícone dentro de um dropdown */
+/*.navbar #btn-logoff {
+    padding: 14px 5px 0px 0px;
+}*/
+
+/* Ajuste para a margen inferior das abas */
+.nav {
+    margin-bottom: 8px;
+}
+
+
+/* Estilos para o modal padrão de carregando do sistema */
+
+.modal.fade {
+
+	-webkit-transition: opacity 0.1s linear, top 0.0s ease-out, bottom 0.0s ease-out, margin-top 0.0s ease-out;	
+	   -moz-transition: opacity 0.1s linear, top 0.0s ease-out, bottom 0.0s ease-out, margin-top 0.0s ease-out;	
+	     -o-transition: opacity 0.1s linear, top 0.0s ease-out, bottom 0.0s ease-out, margin-top 0.0s ease-out;	
+	        transition: opacity 0.1s linear, top 0.0s ease-out, bottom 0.0s ease-out, margin-top 0.0s ease-out;	
+
+}
+
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform .1s ease-out;
+     -moz-transition:    -moz-transform .1s ease-out;
+       -o-transition:      -o-transform .1s ease-out;
+          transition:         transform .1s ease-out;
+  -webkit-transform: translate(0, -5%);
+      -ms-transform: translate(0, -5%);
+          transform: translate(0, -5%);
+}
+
+.modal-dialog {
+  top: -105px;
+  
+}
+
+.modal-header {
+    padding: 5px;
+    padding-right: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.modal-header .close {
+    margin-top: -2px;
+}
+
+.modal-body {
+    padding: 10px 5px 5px 5px;
+    max-height: none;
+}
+
+.modal-body pre {
+    font-size: 10px;
+    text-align: left;
+}
+
+.modal-footer {
+    padding: 5px;
+}
+
+/* Estilos de formulário */
+
+input.parsley-success, textarea.parsley-success {
+    color: #468847 !important;
+    background-color: #DFF0D8 !important;
+    border: 1px solid #D6E9C6 !important;
+}
+
+input.parsley-error, textarea.parsley-error {
+    color: #B94A48 !important;
+    background-color: #F2DEDE !important;
+}
+
+.select2-container.parsley-error a {
+    background-image: none !important;
+    color: #B94A48 !important;
+    background-color: #F2DEDE !important;
+}
+
+ul.parsley-error-list {
+    font-size: 11px;
+    margin: 2px;
+    padding-top: 6px;
+    list-style-type: none;
+}
+
+ul.parsley-error-list li {
+    line-height: 11px;
+}
+
+.required {
+    
+}
+
+/* Ativa as transições js do componente jquery.autosize */
+textarea {
+    /*
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    -ms-transition: height 0.2s;
+    -o-transition: height 0.2s;
+    transition: height 0.2s;
+    */
+    resize: none;
+    min-height: 35px;
+}
+
+.navbar .navbar-brand {
+    padding: 8px 20px 2px 20px;
+}
+/* Adicionado .divider-vertical - está fora a partir do Bootstrap 3 */
+.navbar .divider-vertical {
+  height: 39px;
+  margin: 0 0px;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #f2f2f2;
+}
+
+/* Adicionado .dropdown-submenu - está fora a partir do Bootstrap 3 */
+.dropdown-submenu {
+	position: relative;
+	overflow: visible;
+}
+
+.dropdown-submenu>.dropdown-menu {
+	left: 157px;
+	margin-top: -32px;
+	margin-left: -1px;
+	-webkit-border-radius: 0 6px 6px 6px;
+	-moz-border-radius: 0 6px 6px 6px;
+	border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+	display: block;
+}
+
+.dropdown-submenu>a:after {
+	display: block;
+	content: " ";
+	float: right;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	border-left-color: #cccccc;
+	margin-top: 5px;
+	margin-right: -10px;
+}
+
+.dropdown-menu{
+	font-size: 12px;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #428bca;
+}
+
+/** Animação de carregamento */
+.loading-block {
+    background-color:#2187e7;  
+    background-image: -moz-linear-gradient(45deg, #2187e7 25%, #a0eaff); 
+    background-image: -webkit-linear-gradient(45deg, #2187e7 25%, #a0eaff);
+    border-left:1px solid #111; border-top:1px solid #111; border-right:1px solid #333; border-bottom:1px solid #333; 
+    width:10px;
+    height:10px;
+    float:left;
+    margin-left:5px;
+        opacity:0.1;
+    -moz-transform:scale(0.7);
+    -webkit-transform:scale(0.7);
+    -moz-animation:move 1s infinite linear;
+    -webkit-animation:move 1s infinite linear;
+}
+#loading_block_1{
+    -moz-animation-delay: .4s;
+    -webkit-animation-delay: .4s;
+ }
+#loading_block_2{
+    -moz-animation-delay: .3s;
+    -webkit-animation-delay: .3s;
+}
+#loading_block_3{
+    -moz-animation-delay: .2s;
+    -webkit-animation-delay: .2s;
+}
+#loading_block_4{
+    -moz-animation-delay: .3s;
+    -webkit-animation-delay: .3s;
+}
+#loading_block_5{
+    -moz-animation-delay: .4s;
+    -webkit-animation-delay: .4s;
+}
+
+@-moz-keyframes move{
+    1%{-moz-transform: scale(1.2);opacity:1;}
+    100%{-moz-transform: scale(0.7);opacity:0.1;}
+}
+@-webkit-keyframes move{
+    1%{-webkit-transform: scale(1.2);opacity:1;}
+    100%{-webkit-transform: scale(0.7);opacity:0.1;}
+}
+
+.datetime-inline{
+	padding: 0 6px;
+}
+
+/** timepicker.css */
+
+div.time-picker {
+  position: absolute;
+  height: 191px;
+  width:6.4em; /* needed for IE */
+  overflow: auto;
+  background: #fff;
+  border: 1px solid #aaa;
+  z-index: 99;
+  margin: 0;
+}
+div.time-picker-12hours {
+  width:6em; /* needed for IE */
+}
+
+div.time-picker ul {
+  list-style-type: none;
+  margin: 0px 4px;
+  padding: 0;
+}
+/*div.time-picker li {
+  cursor: pointer;
+  height: 10px;
+  font: 12px/1 Helvetica, Arial, sans-serif;
+  padding: 4px 3px;
+}*/
+div.time-picker li.selected {
+  background: #0063CE;
+  color: #fff;
+  cursor: pointer;
+}
+
+div.textarea {
+    outline: none;
+    overflow: none;
+    overflow-y: scroll;
+    background-color: white;
+    border-collapse: separate; 
+    border: 1px solid rgb(204, 204, 204); 
+    padding: 4px; 
+    box-sizing: content-box; 
+    -webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset; 
+    box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+    border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; border-top-left-radius: 3px; 
+}
+
+/** Definições para o icone do search*/
+.input-icon-search > [class*="icon-"] {
+padding: 2px 0px;
+z-index: 1;
+position: absolute;
+top: 0px;
+bottom: 1px;
+left: 8px;
+line-height: 26px;
+display: inline-block;
+/* color: #F3EEEE; */
+color: #478fca;
+font-size: 14px;
+}
+
+span.input-icon-search {
+display: block;
+}
+
+.input-icon-search > input:focus + [class*="icon-"] {
+color: #478fca;
+}
+
+.btn > [class*="icon-"] {
+display: inline;
+margin-right: 2px;
+}
+
+/* Ajusta conteudo/form em toda a grid */
+.tab-content>.active,.pill-content>.active {
+	display: inline-table;
+}
+
+.progress {
+  margin-bottom: 0px;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="team" title="Grupos" schema="robin">
+  <field name="picture" title="Foto" type="image" form="e" grid="v"/>
+  <field name="name" title="Nome" type="text" size="255" required="1" searchable="1" form="e" grid="v"/>
+  <field name="bio" title="Descrição" type="text" size="255" width="15em" form="e" grid="v"/>
+  
+  <section name="comments" title="Comentários">
+    <field name="datetime" title="Data e Hora" type="datetime" default="NOW()" required="1" form="n" grid="v"/>
+    <field name="user" title="Usuário" field="name" type="fk" table="user" key="id" default="USER" required="1" form="n" grid="v" searchable="1"/>
+    <field name="comment" title="Comentário" type="bigtext" width="15em" required="1" form="e" grid="v" searchable="1"/>
+  </section>
+  
+  <section name="user" title="Usuário">
+    <field name="user" title="Usuário" field="name" type="fk" table="user" key="id" required="1" form="e" grid="v"/>
+    <field name="profile" title="Perfil" type="select" data="Administrador:1,Colaborador:2" required="1" form="e" grid="v"/>
+  </section>
+</section>

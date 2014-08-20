@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="menu" title="Menu" schema="robin">
+  <field name="name" title="Name" type="text" size="50" form="e" grid="v"/>
+  <field name="type" title="Type" type="select" data="Link:1,Header:2,Divider:3" default="1" form="e" grid="v"/>
+  <field name="url" title="Url" type="text" size="255" form="e" grid="v"/>
+  <field name="description" title="Description" type="text" size="255" form="e" grid="v"/>
+  <field name="position" title="Position" type="int" form="e" grid="v"/>
+  <field name="parent" title="Parent" field="name" type="fk" table="robin.menu" key="id" form="e" grid="v"/>
+  <field name="model" title="Model" field="name" type="fk" table="model" key="id" form="e" grid="v"/>
+</section>
