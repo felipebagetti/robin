@@ -33,9 +33,10 @@
 					<div class="col-sm-10 col-sm-offset-1">
 						<div class="login-container">
 							<div class="center">
-								<h1 class="white">
 									<img alt="Robin" src="<?php echo Util::getBaseUrl().'robin/img/logo-index.png';?>" height="120">
-								</h1>
+							</div>
+							<div class="center white">
+									<span> - <a href="https://github.com/felipebagetti/robin" target="_blank">Projeto de código aberto</a> - </span>
 							</div>
 
 							<div class="space-6"></div>
